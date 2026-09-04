@@ -1,0 +1,52 @@
+/* ==========================================
+   PASTELERÍA DULCE ENCANTO - ESTILOS BASE
+   ========================================== */
+
+/* Variables de Colores Pastel */
+:root {
+  --pastel-pink: #FDE2E4;
+  --pastel-rose: #FFCAD4;
+  --pastel-cream: #FFF1E6;
+  --pastel-mint: #E2F0CB;
+  --pastel-sky: #B5E2FA;
+  --pastel-lavender: #E8AEB7;
+  --pastel-dark: #4A3E3D;
+  --pastel-text: #5D4037;
+  --bg-main: #FFF9F5;
+}
+
+/* Configuración General */
+body {
+  background-color: var(--bg-main);
+  color: var(--pastel-dark);
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Sombras Personalizadas */
+.custom-shadow {
+  box-shadow: 0 10px 25px -5px rgba(232, 174, 183, 0.25);
+}
+
+/* Ocultar barra de desplazamiento sin perder funcionalidad */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Transiciones Suaves para Tarjetas e Imágenes */
+.group:hover img {
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+}
+
+/* Ajustes de tipografía para encabezados */
+h1, h2, h3, .font-serif {
+  font-family: 'Playfair Display', serif;
+}
